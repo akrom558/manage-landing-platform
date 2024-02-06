@@ -23,22 +23,18 @@
     font-weight: 400;
     line-height: 26px;
     letter-spacing: 0px;
-    max-width: 350px;
-}
-
-.about_box {
-    display: flex;
+    max-width: 450px;
     gap: 30px;
-    ;
+    padding-bottom: 40px;
 }
 
-.boxx {
-    max-width: 97px;
-    border-radius: 29px;
-    background: rgb(243, 96, 60);
-    padding: 6px 10px;
-    height: 39px;
-}
+// .boxx {
+//     max-width: 97px;
+//     border-radius: 29px;
+//     background: rgb(243, 96, 60);
+//     padding: 6px 10px;
+//     height: 39px;
+// }
 
 .about__box_content {
     color: rgb(36, 45, 82);
@@ -47,6 +43,7 @@
     line-height: 23px;
     letter-spacing: -0.29px;
     padding-bottom: 20px;
+    padding-left: 70px;
 }
 
 .about__box_text {
@@ -57,10 +54,92 @@
     letter-spacing: 0px;
     padding-bottom: 46px;
 }
+
+.about__span {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 23px;
+    letter-spacing: -0.29px;
+    border-radius: 39px;
+    padding: 6px 25px;
+    background-color: rgb(243, 96, 60);
+    position: absolute;
+    left: 0;
+    top: -10px;
+    display: inline-block;
+}
+
+.about_box {
+    max-width: 540px;
+    position: relative;
+}
+
+.about_item {
+    padding-left: 95px;
+
+    &::before {
+        content: "";
+    }
+}
+
 @media screen and (max-width:900px) {
-    .about__block{
-        display: inline-block;
+    .about__block {
+        flex-direction: column;
+    }
+
+    .about__text {
         text-align: center;
+        max-width: 100%;
+    }
+
+    .about_item {
+        text-align: center;
+        max-width: 100%;
+        justify-content: space-between;
+    }
+
+    .about_item {
+        padding: 0;
+
+    }
+
+    .about__span {
+        top: 0;
+        left: 0;
+    }
+
+    .about_item {
+        padding-bottom: 54px;
+    }
+
+    .about__box_content {
+        background-color: #fff0ec;
+        border-top-left-radius: 23px;
+        border-bottom-left-radius: 23px;
+        text-align: center;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .about__list {
+        // margin-left: auto;
+        // margin-right: auto;
+        text-align: center;
+        max-width: 100%;
+        justify-content: center;
         align-items: center;
+    }
+
+    .about__box_text {
+        color: rgb(36, 45, 82);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 28px;
+        padding-top: 8px;
+
+    }
+    .about{
+        padding-bottom: 62px;
     }
 }

@@ -1,0 +1,59 @@
+.team__title {
+    max-width: 445px;
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 44px;
+
+
+}
+
+.team__block {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f3603c;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    align-items: center;
+}
+
+.team {
+    background-color: #f3603c
+}
+
+.team__btn {
+    // color:#f3603c;
+    // font-size: 13px;
+    // font-weight: 700;
+    // line-height: 19px;
+    // letter-spacing: 0px;
+    // max-width: 137px;
+    // padding: 12px 32px;
+    // border-radius: 22px;
+    // background-color:#fff;
+    // border: none;
+    color: rgb(243, 96, 60);
+    font-family: Be Vietnam;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 19px;
+    padding: 12px 32px;
+    border-radius: 22px;
+    background: rgb(255, 255, 255);
+    max-width: 137px;
+    height: 44px;
+    width: 100%;
+    border:none;
+}
+
+@media screen and (max-width:650px){
+    .team__block{
+        flex-direction: column;
+    }
+    .team__title{
+        padding-bottom: 29px;
+        text-align: center;
+    }
+}
